@@ -1,0 +1,32 @@
+{
+  "name": "Agora API caller",
+  "description": "A barebones Flask app to route cloud recording calls to Agora.io",
+  "repository": "https://github.com/bleonar5/api-caller-template",
+  "logo": "",
+  "env": {
+    "APPID": {
+      "description": "Agora Project APPID",
+    },
+    "ACCESS_KEY": {
+      "description": "S3 ACCESS_KEY (downloaded in .csv)",
+    },
+    "SECRET_KEY": {
+      "description": "S3 SECRET_KEY (downloaded in .csv)"
+    },
+    "VENDOR": {
+      "value": 1
+    },
+    "REGION": {
+      "explained in instructions"
+    },
+    "BUCKET": {
+      "description": "the name of the S3 bucket you created"
+    },
+    "API_KEY": {
+      "description": "From the RESTFUL API secret you created on agora (file is 'key_and_secret.txt')"
+    },
+    "SECRET_KEY": {
+      "description": "From the RESTFUL API secret you created on agora (file is 'key_and_secret.txt')"
+    }
+  }
+}

@@ -11,6 +11,15 @@ import config
 app= Flask(__name__)
 CORS(app)
 
+APPID = os.environ.get("APPID")
+ACCESS_KEY = os.environ.get("ACCESS_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY")
+VENDOR = os.environ.get("VENDOR")
+REGION = os.environ.get("REGION")
+BUCKET = os.environ.get("BUCKET")
+API_KEY = os.environ.get("API_KEY")
+API_SECRET = os.environ.get("API_SECRET")
+
 
 timeout=30
 
