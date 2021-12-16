@@ -6,7 +6,6 @@ import requests
 import time
 import base64
 from requests.auth import HTTPBasicAuth
-import config
 
 app= Flask(__name__)
 CORS(app)
