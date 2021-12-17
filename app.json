@@ -12,9 +12,6 @@
     "SECRET_KEY": {
       "description": "S3 SECRET_KEY (downloaded in .csv)"
     },
-    "VENDOR": {
-      "value": 1
-    },
     "REGION": {
       "description":"explained in instructions"
     },
