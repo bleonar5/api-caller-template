@@ -14,7 +14,7 @@ CORS(app)
 APPID = os.environ.get("APPID")
 ACCESS_KEY = os.environ.get("ACCESS_KEY")
 SECRET_KEY = os.environ.get("SECRET_KEY")
-VENDOR = 1 #os.environ.get("VENDOR")
+VENDOR = 1
 REGION = os.environ.get("REGION")
 BUCKET = os.environ.get("BUCKET")
 API_KEY = os.environ.get("API_KEY")
