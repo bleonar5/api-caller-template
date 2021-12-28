@@ -95,7 +95,8 @@ def start():
 					"region": REGION,
 					"accessKey": ACCESS_KEY, 
 					"bucket": BUCKET,
-					"vendor": VENDOR
+					"vendor": VENDOR,
+					"fileNamePrefix": [request.json['cName']]
 					},
 				"recordingConfig": {
 					"audioProfile": 2,
@@ -109,6 +110,9 @@ def start():
 						"mixedVideoLayout": 1,
 						"backgroundColor": "#ffffff"
 						}
+					},
+				"recordingFileConfig": {
+					"avFileType": ["hls","mp4"]
 					}
 				}
 			}
