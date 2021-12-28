@@ -96,7 +96,7 @@ def start():
 					"accessKey": ACCESS_KEY, 
 					"bucket": BUCKET,
 					"vendor": VENDOR,
-					"fileNamePrefix": [request.json['cName'][2:]
+					"fileNamePrefix": [request.json['cName'][2:]]
 					},
 				"recordingConfig": {
 					"audioProfile": 2,
