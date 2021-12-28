@@ -81,7 +81,8 @@ def start():
 	response = requests.get('https://'+TOKEN_APP_NAME+'.herokuapp.com/access_token?channel='+request.json['cName']+'&uid=99')
 
 	token = response.json()['token']
-
+	print(token)
+	print('token printed: ' + TOKEN_APP_NAME)
 	layoutConfig = [{"x_axis": 0.0, "y_axis": 0.0, "width": 0.3, "height": 0.3, "alpha": 0.9, "render_mode": 1},
 					{"x_axis": 0.3, "y_axis": 0.0, "width": 0.3,"height": 0.3, "alpha": 0.77, "render_mode": 0}]
 	start_body={
