@@ -19,7 +19,7 @@ REGION = int(os.environ.get("REGION"))
 BUCKET = os.environ.get("BUCKET")
 API_KEY = os.environ.get("API_KEY")
 API_SECRET = os.environ.get("API_SECRET")
-
+TOKEN_APP_NAME = os.environ.get("TOKEN_APP_NAME")
 
 timeout=30
 
@@ -78,7 +78,7 @@ def acquire():
 def start():
 	start_url = url+ "resourceid/%s/mode/mix/start" % request.json['resourceId']
 
-	response = requests.get('https://teamwork-token-gen.herokuapp.com/access_token?channel='+request.json['cName']+'&uid=99')
+	response = requests.get('https://'+TOKEN_APP_NAME+'.herokuapp.com/access_token?channel='+request.json['cName']+'&uid=99')
 
 	token = response.json()['token']
 
