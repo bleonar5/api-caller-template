@@ -23,6 +23,9 @@
     },
     "API_SECRET": {
       "description": "From the RESTFUL API secret you created on agora (file is 'key_and_secret.txt')"
+    },
+    "TOKEN_APP_NAME": {
+      "description": "The name (NOT the URL) of the token generator app you deployed in the previous step (e.g. token-gen-app)"
     }
   }
 }
